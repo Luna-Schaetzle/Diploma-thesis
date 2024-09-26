@@ -1,3 +1,17 @@
+
+![GitHub stars](https://img.shields.io/github/stars/Luna-Schaetzle/Diploma-thesis "GitHub stars")
+![GitHub license](https://img.shields.io/github/license/Luna-Schaetzle/Diploma-thesis "GitHub license")
+![GitHub contributors](https://img.shields.io/github/contributors/Luna-Schaetzle/Diploma-thesis "GitHub contributors")
+![GitHub last commit](https://img.shields.io/github/last-commit/Luna-Schaetzle/Diploma-thesis "GitHub last commit")
+![GitHub repo size](https://img.shields.io/github/repo-size/Luna-Schaetzle/Diploma-thesis "GitHub repo size")
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Luna-Schaetzle/Diploma-thesis "GitHub code size in bytes")
+![GitHub language count](https://img.shields.io/github/languages/count/Luna-Schaetzle/Diploma-thesis "GitHub language count")
+![GitHub top language](https://img.shields.io/github/languages/top/Luna-Schaetzle/Diploma-thesis "GitHub top language")
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Luna-Schaetzle/Diploma-thesis "GitHub commit activity")
+
+
+
+
 # Diploma Thesis SAIPiA - Self-sufficient Artificial Intelligent Raspberry Pi Assistant
 
 SAIPiA is a cutting-edge, self-sufficient AI assistant running on the Raspberry Pi 5, designed to operate autonomously. It integrates artificial intelligence with a range of functions such as database access, large language models (LLMs), image recognition, speech recognition, and image generation. SAIPiA is a compact, secure, and efficient system that can function both online and offline, ideal for various applications.
@@ -70,6 +84,7 @@ Feel free to modify this according to your project needs and the specific softwa
 
 # Planned expentions on the backend AI
 - change the models 
+- Help if you dont kwon what to say (INFO: /help)
 - add more models
 - voice input 
 - voice output (with Python voice libary)
@@ -80,8 +95,8 @@ Feel free to modify this according to your project needs and the specific softwa
     - Weather database 
     - News database
     - Music database
-    - Time 
-    - Date 
+    - Time [done]
+    - Date [done]
     - Calendar
     - Reminder
     - Alarm
