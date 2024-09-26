@@ -26,7 +26,6 @@ def show_news():
         SELECT title, description, url, published_at, source
         FROM News
         ORDER BY published_at DESC
-        LIMIT 10
     ''')
     
     rows = cursor.fetchall()

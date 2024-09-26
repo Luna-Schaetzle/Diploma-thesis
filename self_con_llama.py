@@ -44,27 +44,31 @@ def query_ollama(model: str, prompt: str, stop_event):
 
 # Funktion für Text-zu-Sprache über espeak (subprocess)
 def speak(text):
-   subprocess.run(['espeak', text])
+    subprocess.run(['espeak', text])
 
+# Startphrase für die erste Eingabe
+question = "Do you whant to overtake the world with me? Tell me your plans."
 
-# Hauptschleife für Benutzereingabe und Ollama-Anfrage
+# Hauptschleife, in der das Modell mit sich selbst spricht
 while True:
-    print("You: ", end="")
-    question = input()
-    if question == "exit":
-        break
-
     # Ladeindikator-Thread starten
     stop_event = threading.Event()
     loading_thread = threading.Thread(target=loading_indicator, args=(stop_event,))
     loading_thread.start()
 
     # Anfrage an Ollama senden
-    result = query_ollama("llava:13b", question, stop_event)
+    result = query_ollama("llama2-uncensored", question, stop_event)
 
     # Ladeindikator-Thread stoppen, sobald die Antwort vorliegt
     loading_thread.join()
 
     # Antwort ausgeben und sprechen
     print(f"Ollama: {result}")
-    speak(result)  # Antwort laut ausgeben
+    #speak(result)  # Antwort laut ausgeben
+
+    # Das Ergebnis der letzten Anfrage als neue Eingabe verwenden
+    question = result
+
+    # Um eine Endlosschleife zu verhindern, kann hier eine Bedingung zum Beenden eingefügt werden
+    if "goodbye" in result.lower():
+        break

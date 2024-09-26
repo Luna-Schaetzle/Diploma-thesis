@@ -56,7 +56,7 @@ def get_latest_news_from_db():
         SELECT title, description, source, published_at 
         FROM News 
         ORDER BY published_at DESC 
-        LIMIT 3
+        LIMIT 5
     ''')
     latest_news = cursor.fetchall()
     conn.close()

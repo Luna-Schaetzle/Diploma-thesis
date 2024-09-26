@@ -65,3 +65,18 @@ https://newsapi.org/
 Mit dieser API kann man sich die neuesten Narichten holen. Wenn man einen Developer Akount macht dann erhält man 100 Anfragen pro tag.
 Man kann dann einfach mittels eines Shedules das Python skript zur abfrage der News alle stunde laufen lassen falls der Raspberry W-Lan hat.
 
+die Daten werden in eine SQLite Datenbank gespeichert. 
+
+Wenn dann der Nutzer nach den neuesten Narichten frag (Das wird wieder durch einen speziellen keyword erkannt) dann wird die Datenbank abgefragt und die neuesten Narichten der AI zusätzlich zur verfügung gestellt.
+
+
+# AI changer 
+
+Für jede eingabe geht eine andere KI über den Promt und sucht das Ideale model für die eingabe raus und sucht dan das beste model für die ausgabe raus.
+z.b. für coding tasks wird eventuell codegema verwendet und für normale fragen llama.
+
+
+
+# AI voice 
+
+Es gibt verschiedene möglichkeiten audio mit Python auszugeben.
