@@ -3,7 +3,7 @@ import requests
 import threading
 import time
 import os
-from gtts import gTTS
+
 
 # Ladeindikator-Funktion
 def loading_indicator(stop_event):
@@ -60,7 +60,7 @@ while True:
     loading_thread.start()
 
     # Anfrage an Ollama senden
-    result = query_ollama("llava:13b", question, stop_event)
+    result = query_ollama("phi3.5", question, stop_event)
 
     # Ladeindikator-Thread stoppen, sobald die Antwort vorliegt
     loading_thread.join()

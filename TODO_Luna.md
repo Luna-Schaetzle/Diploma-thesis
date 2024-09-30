@@ -1,0 +1,5 @@
+- LLAMA3.2 Test & Research (Maby Benchmarking)
+- Voice input
+- Voice Ouput (search after a better libary)
+- Try AI changer (Maby LLAMA3.2:1b)
+- Try to download model waits for LLAMA (More faster than OLLAMA?)

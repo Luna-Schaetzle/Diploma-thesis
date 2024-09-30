@@ -80,3 +80,32 @@ z.b. für coding tasks wird eventuell codegema verwendet und für normale fragen
 # AI voice 
 
 Es gibt verschiedene möglichkeiten audio mit Python auszugeben.
+
+
+# Voice input
+
+
+# Bilderkennung
+
+## Llava
+Es gibt einerseits das Ollama modell llava dem auch bilder anghängt werden kann. In dem man einfach den Pfad zum Bild angibt. 
+
+## Bilderkennung mittels Python
+
+Es gibt auch die möglichkeit Bilder mittels Python zu erkennen. Dafür gibt es verschiedene Bibliotheken. Eine davon ist OpenCV.
+
+## Eventuelle gesichter erkennung
+
+Dies kann ich machen mitels des Programmes das ich letztes jahr geschrieben habe. 
+
+Gesichtserkennung kann zur entsperrung des Systems verwendet werden oder auch zur Personalisierung des Systems.
+
+# neuens lightway Modells: LLama3.2 1b und 3b 
+
+Diese kann man über Ollama verwenden. sind beide sehr klein 3b ist 2GB groß und 1b ist 1.3GB groß
+
+# Neues Multimodal Modell: LLama3.2 11b & 90b
+
+
+# LLama3.1 großes Modell 405b 70b & 8b
+
