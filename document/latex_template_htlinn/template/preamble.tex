@@ -1,0 +1,54 @@
+\documentclass[%
+fontsize=\myfontsize,%% size of the main text
+paper=\mypapersize,  %% paper format
+parskip=\myparskip,  %% vertical space between paragraphs (instead of indenting first par-line)
+DIV=calc,            %% calculates a good DIV value for type area; 66 characters/line is great
+headinclude=true,    %% is header part of margin space or part of page content?
+footinclude=false,   %% is footer part of margin space or part of page content?
+open=right,          %% "right" or "left": start new chapter on right or left page
+appendixprefix=true, %% adds appendix prefix; only for book-classes with \backmatter
+bibliography=totoc,  %% adds the bibliography to table of contents (without number)
+draft=\mydraft,      %% if true: included graphics are omitted and black boxes
+                     %%          mark overfull boxes in margin space
+BCOR=\myBCOR,        %% binding correction (depends on how you bind
+                     %% the resulting printout.
+\mylaterality        %% oneside: document is not printed on left and right sides, only right side
+                     %% twoside: document is printed on left and right sides
+]{scrbook}  %% article class of KOMA: "scrartcl", "scrreprt", or "scrbook".
+            %% CAUTION: If documentclass will be changed, *many* other things
+            %%          change as well like heading structure, ...
+
+\usepackage{float}
+\usepackage{ifthen}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc} %% UTF8 as input characters
+\usepackage{textcomp}
+\usepackage[\mylanguage]{babel}  %% used languages; default language is *last* language of options
+\usepackage{scrlayer-scrpage} %%  advanced page style using KOMA
+
+
+\ifthenelse{\boolean{\mydraft}}{   %% the \mydraft switches between
+                                   %% showing rectangles instead of graphics
+  \usepackage[pdftex,draft]{graphicx}
+}
+{
+  \usepackage[pdftex]{graphicx}
+}
+
+\usepackage{pifont}
+%% pre-define ifthen-boolean variables:
+\newboolean{myaddcolophon}
+\newboolean{myaddlistoftodos}
+\newboolean{english_affidavit}
+\usepackage{xspace}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{DispositionColor}{RGB}{\mydispositioncolor} %% used for links and so forth in screen-version
+
+\usepackage[normalem]{ulem}
+\usepackage{framed}
+\usepackage{eso-pic}
+\usepackage{enumitem}
+\usepackage[\mytodonotesoptions]{todonotes}  %% option "disable" removes all todonotes output from 
+\usepackage{units}
+\usepackage{listings}

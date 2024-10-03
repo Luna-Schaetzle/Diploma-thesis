@@ -114,3 +114,9 @@ Diese kann man über Ollama verwenden. sind beide sehr klein 3b ist 2GB groß un
 # AI Persönlichkeit (emotionen)
 
 Die person erhält durch vorpromts eine Persönlichkeit. Diese kann sich durch die eingaben der Person ändern. 
+
+
+# open source evaluation
+
+Ich könnte für den wirtschaftlichen Teil meiner Diplomarbeit eine Open Source evaluation machen und den generellen imapact auf die Wirtschaft untersuchen.
+

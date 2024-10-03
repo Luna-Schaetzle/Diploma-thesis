@@ -1,0 +1,145 @@
+%% Template basiert auf der Vorlage der Uni Graz für VWA: https://latex.tugraz.at/vorlagen/allgemein
+
+%% Versionen:
+%% V1: 9. Augugst 2021 (GreiA)
+
+
+\input{template/main_settings}
+
+%% ========================================================================
+%% Document metadata: DIESE WERTE BITTE ANPASSEN, wie werden dann automatisch auf der
+%% Titelseite angezeigt
+%% ========================================================================
+
+\newcommand{\mytitle}{SAIPIA} 
+\newcommand{\mysubtitle}{SUBTITITLE}
+\newcommand{\myinstitute}{Abteilung für Wirtschaftsingenieure/Betriebsinformatik} 
+\newcommand{\mysubmissionyear}{2025} %% Einreich - Jahr
+\newcommand{\mysubmissionmonth}{April} %% Monat der Einreichung
+\newcommand{\myauthor}{Gabriel Mrkonja\\Florian Prandstetter\\Luna Schätzle}  %% Autoren. Bitte mit \\ Trennen wenn mehrere
+\newcommand{\mysupervisor}{Greinöcker\\Egger}  %%Betreuer. Bitte mit \\ Trennen wenn mehrere
+%%\newcommand{\myprojectpartner}{Vollständige Bezeichnung der Firma}  %% Partnerfirma
+
+\newcommand{\mysubject}{SUBJECT}  %% also used for PDF metadata (hyperref)
+\newcommand{\mykeywords}{KEYWORDS}  %% also used for PDF metadata (hyperref)
+
+
+%% header settings
+\usepackage{lastpage}
+
+\ohead{\headmark }
+\ihead*{\includegraphics[width=3cm]{figures/htl-logo}}
+
+\ifoot{\thepage}  %Will man Anzahl Seiten: /\pageref{LastPage}
+\ofoot{\myauthor}
+
+
+%% ========================================================================
+%%%% MISC command definitions
+%% ========================================================================
+\input{template/mycommands}
+
+%% ========================================================================
+%%%% Typographic settings
+%% ========================================================================
+\input{template/typographic_settings}
+\input{template/listing_format}
+
+%% ========================================================================
+%%%% MISC usepackages
+%% ========================================================================
+
+%% ... it's OK to put here your own usepackage commands ...
+
+
+
+
+%% ========================================================================
+%%%% MISC self-defined commands and settings
+%% ========================================================================
+
+%% ... it's OK to put here your own newcommand/newenvironment-definitions ...
+
+
+
+
+
+\hyphenation{ex-am-ple hy-phen-ate}  %% in order to use German umlauts
+%% here (Ver-\"of-fent-li-chung), you have to check for
+%% activated \usepackage[T1]{fontenc} in the preamble
+
+%% override default language of babel: (be sure to know, what you're
+%% doing here)
+\selectlanguage{american}
+%\selectlanguage{ngerman}
+
+%% ========================================================================
+%% bibtex für die Literaturverwaltung: Hier wird der Zitier-Stil festgelegt
+%% ========================================================================
+\usepackage{natbib} 
+\bibliographystyle{agsm} 
+
+
+
+
+
+\input{template/pdf_settings}  %% should be *last* definitions in preamble!
+
+%% ========================================================================
+%%%% begin{document}
+%% ========================================================================
+
+\begin{document} 
+\frontmatter                    %% KOMA: roman page numbers and such; only available in scrbook
+
+%% \input{colophon}                %% defines information about editor, LaTeX, font, ...
+
+%% Choose your desired title page:
+\input{\mytitlepage}            %% include title page
+
+\input{template/lock_flag} % Wenn kein Sperrvermerk gemacht werden soll, dann diesen Import einfach auskommentieren
+
+%%\input{template/declaration_TU_Graz}  %% Statutory Declaration
+% \input{thanks}                %% this is a suggestion: you have to create this file on demand
+% \input{foreword}              %% this is a suggestion: you have to create this file on demand
+
+
+%% include the abstract without chapter number but include it on table of contents:
+%%\let\cleardoublepage\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Abstract}
+   
+\include{content/abstract}              %% Abstract
+\input{template/affirmation} %%EIDESSTATTLICHE ERKLÄRUNG  
+
+\tableofcontents                %% this produces the table of contents - you might have guessed :-)
+
+
+
+%% if myaddlistoftodos is set to "true", the current list of open todos is added:
+\ifthenelse{\boolean{myaddlistoftodos}}{
+  \newpage\listoftodos          %% handy if you are using todonotes with \todo{}
+}{}                             %% with todonotes-package option "disable" you can get rid of any todo in the output
+
+\mainmatter                     %% KOMA: marks main part using arabic page numbers and such; only available in scrbook
+
+
+%% HIER DIE EIGENEN KAPITEL EINFÜGEN
+\input{content/einleitung}  
+\input{content/test} % Einfach auskommentieren für die tatsächliche Arbeit
+\input{content/latex_beispiele} % Einfach auskommentieren für die tatsächliche Arbeit
+
+
+\appendix                       %% closes main document, appendix follows until end; only available in book-classes
+
+\addpart*{Appendix}             %% adding Appendix to tableofcontents
+
+
+
+\listoftables
+\listoffigures
+\lstlistoflistings
+\nocite{*} %Es werden auf nicht referenzierte Literaturstellen aufgelistet
+\bibliography{references}
+
+\end{document}

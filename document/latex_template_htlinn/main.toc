@@ -1,0 +1,22 @@
+\babel@toc {american}{}\relax 
+\babel@toc {ngerman}{}\relax 
+\contentsline {chapter}{Abstract}{ii}{section*.1}%
+\contentsline {subparagraph}{\nonumberline Projektergebnis}{iv}{subparagraph*.4}%
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Vertiefende Aufgabenstellung}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Schüler*innen Name 1}{1}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Schüler*innen Name 2}{1}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Dokumentation der Arbeit}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Test}{3}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Latex-Beispiele}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Aulistungen}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Tabellen}{5}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Abbildungen}{7}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Quellcode}{7}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Java-Code}{7}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Python-Code}{8}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Lesen von Dateien}{8}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Referenzen}{8}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Zitate}{9}{section.3.6}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{19}{chapter*.12}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
