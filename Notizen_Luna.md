@@ -1,4 +1,4 @@
-# OLLAMA
+ # OLLAMA
 
 Ich verwende ollama für das Projekt da es einfach zu implementieren ist und auch leicht zu bedienen und zu verwenden ist. 
 Es lässt sich auserdem leicht mit anderen Programmen verbinden und ist auch sehr flexibel.
@@ -109,3 +109,8 @@ Diese kann man über Ollama verwenden. sind beide sehr klein 3b ist 2GB groß un
 
 # LLama3.1 großes Modell 405b 70b & 8b
 
+
+
+# AI Persönlichkeit (emotionen)
+
+Die person erhält durch vorpromts eine Persönlichkeit. Diese kann sich durch die eingaben der Person ändern. 
