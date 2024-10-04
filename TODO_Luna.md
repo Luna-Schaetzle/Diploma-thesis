@@ -7,4 +7,8 @@
 - Evaluate the possibility of Open Source evaluation for the diploma thesis as part of the economic part 
 - Gabi bezüglich hartware erzehlen -> genaue Auflistung der Hardware und beschreibung der Hardware
 - Ergänzung der Used tools and technologies
-  
+- Ergänzung der verwendeten Software und verwendete open source software und verwendete Programmiersprachen  
+- Einen Teil für die Lizenzen der Software und der Hardware einfügen
+- wttr in Ollama einbinden 
+- wttr schöne wetter Daten holen 
+- Wirtschafltichelichen Teil genauer gedanken machen 

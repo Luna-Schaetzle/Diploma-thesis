@@ -76,7 +76,6 @@ Für jede eingabe geht eine andere KI über den Promt und sucht das Ideale model
 z.b. für coding tasks wird eventuell codegema verwendet und für normale fragen llama.
 
 
-
 # AI voice 
 
 Es gibt verschiedene möglichkeiten audio mit Python auszugeben.
@@ -119,4 +118,24 @@ Die person erhält durch vorpromts eine Persönlichkeit. Diese kann sich durch d
 # open source evaluation
 
 Ich könnte für den wirtschaftlichen Teil meiner Diplomarbeit eine Open Source evaluation machen und den generellen imapact auf die Wirtschaft untersuchen.
+
+# wetter 
+## Mittels wttr.in 
+
+Mittels der applikation wttr kann ich das wetter als JSON mittels Python abfragen und dann in die Konsole ausgeben.
+So kann ich das Wtter als JSON erhalten:
+https://wttr.in?format=j1
+
+In diesem Format ermittelt er sich die lokation automatisch mittels der IP Adresse.
+
+Wir können aber auch eine Lokation angeben:
+https://wttr.in/Berlin?format=j1
+
+
+Wenn wir das so machen dann können wir wie vorher das wetter einfach der KI übergen 
+
+## Wttr.in aber als schöne anzeige 
+
+wir könnten aber auch machen das immer wenn wir eine Anfrage erhalten einfach das schöne ASCII art von wttr.in anzeigen lassen. 
+
 
