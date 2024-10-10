@@ -12,3 +12,5 @@
 - wttr in Ollama einbinden 
 - wttr schöne wetter Daten holen 
 - Wirtschafltichelichen Teil genauer gedanken machen 
+- Test des Voice Input von openAI (Whisper)
+- Image generation with AI

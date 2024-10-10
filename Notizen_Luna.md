@@ -83,6 +83,9 @@ Es gibt verschiedene möglichkeiten audio mit Python auszugeben.
 
 # Voice input
 
+## Neues Whisper Modell von openAI
+https://huggingface.co/openai/whisper-large-v3-turbo
+
 
 # Bilderkennung
 
@@ -137,5 +140,27 @@ Wenn wir das so machen dann können wir wie vorher das wetter einfach der KI üb
 ## Wttr.in aber als schöne anzeige 
 
 wir könnten aber auch machen das immer wenn wir eine Anfrage erhalten einfach das schöne ASCII art von wttr.in anzeigen lassen. 
+
+
+# Bildergenerierung
+
+## Flux dev
+
+Wenn man es mittels des Python Skript ausführt und das Modell noch nicht runtergeladen ist wird als erstes das Modell runtergeladen.
+
+![alt text](image.png)
+
+2. Installationsort
+Python-Pakete: Die heruntergeladenen Bibliotheken werden in deinem Python-Umgebungsverzeichnis installiert, normalerweise in einem Ordner, der dem Namen deiner Umgebung entspricht, wie zum Beispiel:
+
+```bash
+/home/luna/5BHWII/Diplomarbeit/SAIPIA/Diploma-thesis/diplom/lib/python3.12/site-packages/
+```
+Cache von Hugging Face: Die Modelle und Daten werden standardmäßig im Cache von Hugging Face gespeichert, der normalerweise in einem Verzeichnis wie ~/.cache/huggingface/ auf deinem System zu finden ist. Du kannst den Speicherort ändern, indem du die Umgebungsvariable HF_HOME festlegst.
+
+Also das Modell wird in 
+```bash
+/home/luna/.cache/huggingface/hub/models--black-forest-labs--FLUX.1-dev
+
 
 
