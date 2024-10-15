@@ -161,6 +161,14 @@ Cache von Hugging Face: Die Modelle und Daten werden standardmäßig im Cache vo
 Also das Modell wird in 
 ```bash
 /home/luna/.cache/huggingface/hub/models--black-forest-labs--FLUX.1-dev
+```
+
+### Fazit
+
+Nach einigem Rumprobieren mit Flux und den verschiedensten Python Skipts bin ich auf die Schlussfolgerung gekommen das es nicht funktioniert mit mienem Laptop
+da die Swap feils zu klein sind und all meine CPU Kerne Ausgelastet waren und generell mein ganzer Laptop nicht geschaffen für die Aufgabe.
+
+Eine Graphikkarte wäre Praktisch (am besten von NVIDA <- wird Suportet)
 
 
 

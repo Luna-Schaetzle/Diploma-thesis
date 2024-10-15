@@ -1,107 +1,68 @@
+# SAIPiA - Self-sufficient Artificial Intelligent Raspberry Pi Assistant
 
-![GitHub stars](https://img.shields.io/github/stars/Luna-Schaetzle/Diploma-thesis "GitHub stars")
-![GitHub license](https://img.shields.io/github/license/Luna-Schaetzle/Diploma-thesis "GitHub license")
-![GitHub contributors](https://img.shields.io/github/contributors/Luna-Schaetzle/Diploma-thesis "GitHub contributors")
-![GitHub last commit](https://img.shields.io/github/last-commit/Luna-Schaetzle/Diploma-thesis "GitHub last commit")
-![GitHub repo size](https://img.shields.io/github/repo-size/Luna-Schaetzle/Diploma-thesis "GitHub repo size")
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/Luna-Schaetzle/Diploma-thesis "GitHub code size in bytes")
-![GitHub language count](https://img.shields.io/github/languages/count/Luna-Schaetzle/Diploma-thesis "GitHub language count")
-![GitHub top language](https://img.shields.io/github/languages/top/Luna-Schaetzle/Diploma-thesis "GitHub top language")
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Luna-Schaetzle/Diploma-thesis "GitHub commit activity")
+**SAIPiA** (Self-sufficient Artificial Intelligent Raspberry Pi Assistant) ist ein autonomes, intelligentes System, das auf einem Raspberry Pi 5 basiert. Es kombiniert KI-gestützte Funktionen wie Sprachsteuerung, Bildverarbeitung, Datenbankzugriff und maschinelles Lernen, um verschiedenste Aufgaben zu bewältigen. Das System ist modular aufgebaut und flexibel erweiterbar, mit einem starken Fokus auf Open-Source-Technologien.
 
+## Projektübersicht
 
+SAIPiA wird als Diplomarbeit entwickelt und umfasst die folgenden Kernbereiche:
+- Sprach- und Bildverarbeitung
+- Integration von AI-Modellen
+- Optimierung von Hardware und Software
+- Einsatz von Open-Source-Lösungen
+- Nutzung von Raspberry Pi als Basis mit Serverunterstützung
+- Aufbau eines AI Servers mit starker Rechenleistung für erweiterte Modelle
+- Integration von Wetterdaten und anderen externen Diensten
 
+## Funktionsumfang
 
-# Diploma Thesis SAIPiA - Self-sufficient Artificial Intelligent Raspberry Pi Assistant
-
-SAIPiA is a cutting-edge, self-sufficient AI assistant running on the Raspberry Pi 5, designed to operate autonomously. It integrates artificial intelligence with a range of functions such as database access, large language models (LLMs), image recognition, speech recognition, and image generation. SAIPiA is a compact, secure, and efficient system that can function both online and offline, ideal for various applications.
-
-## Features
-- **AI Assistant**: Supports natural language understanding and responses powered by LLMs.
-- **Speech Recognition**: Converts speech to text for voice commands and interactions.
-- **Image Recognition**: Recognizes objects and scenes through camera input.
-- **Image Generation**: Generates images based on user input or AI-driven creativity.
-- **Offline Functionality**: Works without an internet connection, leveraging local databases and resources.
-- **Expandable**: Supports GPIO, USB, and other Raspberry Pi interfaces for project-specific extensions.
-- **Energy-Efficient**: Powered by an internal battery, rechargeable via USB-C.
-
-## System Requirements
-- Raspberry Pi 5 (or compatible hardware)
-- Minimum 8 GB SD card for storage
-- Display (Touchscreen or Monitor)
-- USB Keyboard and Mouse
-- Camera module (for image recognition)
-- Microphone (for speech recognition)
-- Speaker (for audio output)
-- Internet connection (optional, for online functionalities)
-
-## software architecture
-- **Operating System**: 
-- **Programming Language**: Python 3.x
-- **Libraries**: OpenCV, PyTorch, TensorFlow, SpeechRecognition
-- **Databases**: SQLite (local), MySQL (optional, for online mode)
-- **AI Models**: LLAMA, ...
-- **APIs**:  
-
-## Usage
-
-- **Command Line Interface (CLI)**: Interact with SAIPiA using text-based commands.
-- **Speech Commands**: SAIPiA listens for voice commands and responds accordingly.
-- **Image Recognition**: Capture images using the camera module and have them processed for object detection.
-- **Image Generation**: Input text prompts to generate AI-driven images.
-
-## Project Structure
-```
-SAIPiA/
-│
-├── data/                     # Local databases and datasets
-├── models/                   # Pre-trained models for AI functionality
-├── src/                      # Source code for the system
-│   ├── ai_assistant.py        # Core logic for AI assistant
-│   ├── speech_recognition.py  # Speech-to-text and command parsing
-│   ├── image_recognition.py   # Image processing and recognition
-│   └── image_generation.py    # AI-driven image generation logic
-├── tests/                    # Unit tests for each component
-└── README.md                 # Project documentation (this file)
-```
-
-## Contributors
-- **Project Lead**: Luna Schätzle
-- **System Integration**: Florian Prantstetter 
-- **Database Management**: Gabriel Mrkonja
-- **AI/LLM Specialist**: Luna
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-Special thanks to the open-source community for providing tools and resources that made this project possible.
-
----
-
-Feel free to modify this according to your project needs and the specific software components involved!
+- **Sprachsteuerung und -ausgabe**: Verwendung von OpenAI Whisper für den Voice Input und einer verbesserten Bibliothek für den Voice Output.
+- **Bildgenerierung und Erkennung**: AI-Modelle für Edge-Technologie, um Bildverarbeitung und -erkennung zu ermöglichen.
+- **AI-Modellintegration**: Implementierung und Benchmarking von LLAMA3.2 sowie Erweiterung auf serverbasierte Modelle, die auf Flo's Server laufen.
+- **Wetterdatenintegration**: Verwendung von wttr.in zur Abrufung und Darstellung von Wetterdaten.
 
 
-# Planned expentions on the backend AI
-- change the models 
-- Help if you dont kwon what to say (INFO: /help)
-- add more models
-- voice input 
-- voice output (with Python voice libary)
-- add more languages
-- voice translation
-- voice output via ai voice
-- moduele expansions
-    - Weather database 
-    - News database
-    - Music database
-    - Time [done]
-    - Date [done]
-    - Calendar
-    - Reminder
-    - Alarm
-    - Timer
-- user identification (it takes every minute or so a picture of the user and compares it with the database if the user is in the database it will greet the user with the name, if they are not in the database it will ask for the name and add it to the database)
+## Verwendete Technologien
 
-All the databases get updated if SAIPIA gets access to the internet. the database entries get time stampes so the user can see when the last update was.
+- **Raspberry Pi 5** (oder kompatibles Modell)
+- **Server** (optional, für erweiterte AI-Modelle und Verarbeitung)
+- **Python 3.x**
+- **wttr.in** API für Wetterintegration
+- (weitere Technologien werden im Laufe des Projekts hinzugefügt)
 
+## Funktionen und Module (Stand: 15.10.2021)
+
+### LLAMA3.2 Integration
+LLAMA3.2 wird verwendet, um Textverarbeitung und andere AI-Aufgaben zu erledigen. Tests und mögliche Erweiterungen mit LLAMA3.2:1b sind geplant. Die Modelle laufen auf dem Server, um die Verarbeitungsgeschwindigkeit zu erhöhen.
+
+### Voice Input und Output
+- **Input**: Verwendung von OpenAI Whisper für eine akkurate Spracherkennung. (momentan in Arbeit)
+- **Output**: Suche nach einer verbesserten Bibliothek für die Sprachsynthese (Text-to-Speech).
+
+### Wetterintegration
+- **wttr.in** wird für das Abrufen und Anzeigen von Wetterinformationen in SAIPiA verwendet. Wir arbeiten an der besseren Darstellung dieser Daten.
+
+### NEWS-Integration
+- **NEWS-API** wird für das Abrufen und Anzeigen von Nachrichten in SAIPiA verwendet. (Details in Arbeit)
+
+### Bildgenerierung und -erkennung
+- Die Integration von AI-Modellen, die auf Edge-Technologie laufen, ist in Arbeit. Das Ziel ist es, eine effiziente Bildverarbeitung direkt auf dem Gerät durchzuführen.
+- Da Bildgenerierung viel Rechenleistung erfordert, wird ein Server für erweiterte Modelle verwendet.
+
+## Hardware
+
+Die Hardware von SAIPiA besteht aus:
+- **Raspberry Pi 5** als Kernsystem
+- **Webcam** für die Objekterkennung
+- **Zusätzliche Hardware-Komponenten** werden im Laufe des Projekts detailliert beschrieben (Details mit Gabi in Arbeit).
+
+## Lizenzen
+
+Das Projekt verwendet die GNU General Public License v3.0 (GPL-3.0) für die Software und die Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) für die Dokumentation.
+
+## Roadmap
+
+- **Integration neuer AI-Modelle**: Erweiterung der vorhandenen Modelle (LLAMA3.2:1b).
+- **Optimierung der Sprachsteuerung**: Verbesserung der Output-Qualität und Suche nach besseren Bibliotheken.
+- **Wetterdaten**: Optimierung der Darstellung von Wetterdaten aus wttr.in.
+- **Hardware-Tests**: Fortlaufende Tests und Berichte zur Nutzung von AI-Heatern.
+- **Patent- und Open-Source-Recherche**: Evaluierung der rechtlichen Möglichkeiten im Rahmen der Diplomarbeit.
