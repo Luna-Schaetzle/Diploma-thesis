@@ -10,81 +10,82 @@
 
 # SAIPiA - Self-sufficient Artificial Intelligent Raspberry Pi Assistant
 
-**SAIPiA** (Self-sufficient Artificial Intelligent Raspberry Pi Assistant) ist ein autonomes, intelligentes System, das auf einem Raspberry Pi 5 basiert. Es kombiniert KI-gestützte Funktionen wie Sprachsteuerung, Bildverarbeitung, Datenbankzugriff und maschinelles Lernen, um vielseitige Aufgaben effizient zu bewältigen. Mit einem modularen Aufbau und der flexiblen Erweiterbarkeit liegt der Fokus des Projekts stark auf der Nutzung von Open-Source-Technologien.
+**SAIPiA** (Self-sufficient Artificial Intelligent Raspberry Pi Assistant) is an autonomous intelligent system based on a Raspberry Pi 5. It combines AI-powered functionalities like voice control, image processing, database access, and machine learning to efficiently handle versatile tasks. With a modular design and flexible expandability, the project focuses heavily on leveraging open-source technologies.
 
-## Projektübersicht
+## Project Overview
 
-SAIPiA ist eine Diplomarbeit, die die folgenden Kernbereiche umfasst:
-- Sprach- und Bildverarbeitung
-- Integration von KI-Modellen zur Aufgabenerfüllung
-- Optimierung von Hardware- und Softwarekomponenten
-- Einsatz von Open-Source-Lösungen
-- Raspberry Pi als Basis mit Serverunterstützung für erweiterte Rechenlast
-- Aufbau eines dedizierten AI-Servers für leistungsintensive Modelle
-- Einbindung externer Dienste wie Wetterdaten
+SAIPiA is a diploma thesis project that covers the following key areas:
+- Voice and image processing
+- Integration of AI models for task completion
+- Optimization of hardware and software components
+- Utilization of open-source solutions
+- Raspberry Pi as the core system with server support for heavier computational loads
+- Setup of a dedicated AI server for resource-intensive models
+- Integration of external services like weather data
 
-## Funktionsumfang
+## Key Features
 
-- **Sprachsteuerung und -ausgabe**: Nutzung von OpenAI Whisper für präzisen Sprachinput und Suche nach optimierter Text-to-Speech-Bibliothek für Sprachoutput.
-- **Bildgenerierung und Objekterkennung**: Implementierung von KI-Modellen für Edge-Technologie, um lokale Bildverarbeitung zu ermöglichen.
-- **KI-Modellintegration**: Einsatz und Benchmarking von LLAMA3.2 sowie Integration serverbasierter Modelle, die auf einem dedizierten AI-Server laufen.
-- **Wetterdatenintegration**: Abfrage und Darstellung aktueller Wetterdaten über die API von wttr.in.
+- **Voice Control and Output**: Using OpenAI Whisper for precise speech recognition and researching an optimized text-to-speech library for natural speech output.
+- **Image Generation and Object Recognition**: Implementing AI models for edge technology to enable local image processing.
+- **AI Model Integration**: Utilizing and benchmarking LLAMA3.2, along with server-based models running on a dedicated AI server.
+- **Weather Data Integration**: Retrieving and displaying current weather data through the wttr.in API.
 
-## Verwendete Technologien
+## Technologies Used
 
 - **Raspberry Pi 5**
-- **Ubuntu-basierter AI-Server** (optional für komplexe Berechnungen)
-- **Python 3.x** zur Entwicklung und Integration der Module
-- **wttr.in API** zur Wetterintegration
-- (Weitere Technologien werden im Projektverlauf ergänzt)
+- **Ubuntu-based AI server** (optional for complex computations)
+- **Python 3.x** for development and module integration
+- **wttr.in API** for weather data integration
+- (More technologies will be added as the project progresses)
 
-## Detaillierte Funktionen
+## Detailed Features
 
 ### LLAMA3.2 Integration
-LLAMA3.2 wird zur Textverarbeitung und weiteren AI-Aufgaben genutzt. Zukünftige Erweiterungen beinhalten den Einsatz leistungsstärkerer Modelle (z.B. LLAMA3.2:1b), die serverseitig laufen, um die Rechenleistung des Raspberry Pi zu entlasten.
+LLAMA3.2 is used for text processing and other AI-related tasks. Future enhancements include deploying more powerful models (such as LLAMA3.2:1b) on the server side to offload computation from the Raspberry Pi.
 
-### Sprachsteuerung
-- **Input**: OpenAI Whisper für präzise Spracherkennung.
-- **Output**: Ermittlung einer fortgeschrittenen Text-to-Speech-Bibliothek, um natürliche Sprachwiedergabe zu gewährleisten.
+### Voice Control
+- **Input**: OpenAI Whisper for accurate speech recognition.
+- **Output**: Research is underway to find an advanced text-to-speech library for natural voice output.
 
-### Wetterintegration
-- **wttr.in API** wird genutzt, um Wetterinformationen abzufragen und in SAIPiA darzustellen. Optimierungen zur besseren Datenpräsentation sind geplant.
+### Weather Integration
+- The **wttr.in API** is used to fetch weather information, which is displayed by SAIPiA. Further optimizations are planned for better data presentation.
 
-### News-Integration
-- **NEWS-API** wird für das Abrufen und Anzeigen aktueller Nachrichten verwendet. Weitere Details zur Umsetzung folgen.
+### News Integration
+- **NEWS API** will be used to retrieve and display current news updates. Implementation details are forthcoming.
 
-### Bildverarbeitung und -erkennung
-- Lokale Verarbeitung von Bilddaten mit KI-Modellen über Edge-Computing, um Echtzeitergebnisse auf dem Raspberry Pi zu erzielen.
-- Für komplexere Bildgenerierungen wird ein AI-Server eingesetzt.
+### Image Processing and Recognition
+- Local image processing with AI models through edge computing for real-time results on the Raspberry Pi.
+- More complex image generation will be handled by the AI server.
 
 ## Hardware
 
-Die Hardware-Konfiguration von SAIPiA umfasst:
-- **Raspberry Pi 5** als Hauptsystem
-- **Kamera** für Objekterkennung und Umgebungserkennung
-- **AI Accelerator** zur Beschleunigung der Bild- und Objekterkennung
-- **AI-Server** für leistungsintensive KI-Modelle 
-- **Weitere Komponenten** in Abstimmung mit Gabriel
+The SAIPiA hardware configuration includes:
+- **Raspberry Pi 5** as the core system
+- **Camera** for object and environment recognition
+- **AI Accelerator** to boost image and object recognition processing
+- **AI Server** for intensive AI model computation
+- **Additional components** in collaboration with Gabriel
 
-## Screenshots & Demos  
+## Screenshots & Demos
 
-[*wird ergänzt*]
+[*To be added*]
 
 ## Roadmap
 
-- **Erweiterung der KI-Modelle**: Integration und Optimierung fortgeschrittener KI-Modelle (z.B. LLAMA3.2:1b).
-- **Sprachsteuerungsoptimierung**: Verbesserung der Sprachwiedergabe und Suche nach optimierten Bibliotheken.
-- **Wetterdatenintegration**: Verbesserung der Darstellung und Nutzung der Wetterinformationen von wttr.in.
-- **Hardware-Tests**: Fortlaufende Tests zur Nutzung des Raspberry Pi in Kombination mit der Kamera und dem AI Accelerator.
-- **Rechts- und Open-Source-Recherche**: Untersuchung der rechtlichen Rahmenbedingungen und Open-Source-Lizenzen im Rahmen der Diplomarbeit.
+- **AI Model Expansion**: Integration and optimization of advanced AI models (e.g., LLAMA3.2:1b).
+- **Voice Control Optimization**: Improving speech output and researching optimized libraries.
+- **Weather Data Integration**: Enhancing the display and usage of weather information from wttr.in.
+- **Hardware Testing**: Ongoing tests of the Raspberry Pi in combination with the camera and AI accelerator.
+- **Legal and Open-Source Research**: Investigating legal frameworks and open-source licenses as part of the diploma thesis.
 
-## Zukunftspläne
+## Future Plans
 
-In den kommenden Monaten planen wir:
-- Die Integration weiterer externer APIs (z.B. für Verkehrsdaten).
-- Erweiterungen durch Objekterkennung für spezifische Anwendungsfälle wie Smart Home (eventuell).
-- Optimierung der Sprachsteuerung mit mehrsprachiger Unterstützung.
+In the coming months, we plan to:
+- Integrate more external APIs (e.g., for traffic data).
+- Explore object recognition extensions for specific use cases like smart home applications (potentially).
+- Optimize voice control with multilingual support.
 
-## Lizenzierung
+## Licensing
 
-Das Projekt verwendet die GNU General Public License v3.0 (GPL-3.0) für die Software und die Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) für die Dokumentation.
+The project is licensed under the GNU General Public License v3.0 (GPL-3.0) for the software and the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) for the documentation.
+

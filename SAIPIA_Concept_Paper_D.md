@@ -1,6 +1,6 @@
 ---
 title: "SAIPIA Concept Paper"
-author: "Luna"
+author: "Luna Schaetzle"
 date: "17. Oktober 2024"
 ---
   
