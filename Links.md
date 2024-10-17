@@ -21,3 +21,8 @@ https://huggingface.co/blog/sentiment-analysis-python
 download llama:
 https://gist.github.com/zachschillaci27/bd9789a96d1fc6978008bdfbe91eb82f
 https://huggingface.co/docs/transformers/main/en/model_doc/llama#transformers.LlamaForCausalLM
+https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
+
+# llama local with ai app doxc im als quelle verwenden
+https://www.datacamp.com/tutorial/run-llama-3-locally
+
