@@ -8,6 +8,10 @@
 - **wttr.in in Ollama integrieren**
 - **Schöne Wetterdaten mit wttr** holen und aufbereiten
 - **AI-Server aufsetzen** (Schule und/oder Flo’s PC)
+- **Liste der Modelle die wir haben wollen schreiben**
+- **Ai Modelle Raussuchen die man finetunen kann** (LLAMA? Grok? Huggingface?)
+- **Test von Python/VENV on Server + Download** Maby I can Dowload LLAMA3.2
+
 
 ### Technische Optimierungen
 - **Voice Output optimieren** (bessere Bibliotheken recherchieren)
@@ -22,8 +26,9 @@
 - **Verwendete Software ergänzen** (inkl. Open-Source-Software und Programmiersprachen)
 - **Abschnitt zu Software- und Hardware-Lizenzen hinzufügen**
 - **Plan für SAIPiA ausarbeiten** (inkl. AI-Changer und Server-Setup, evtl. Flowchart)
-- **Günstige Webcam suchen** zur Implementierung von Objekterkennung
-
+- **erweiterung Wirtschaft: Impect of AI** (auf die Wirtschaft) schreiben und einfügen 
+- **Gabi einteilen das er mehr sachen machen kann** (Hardware, AI-Heater, AI-Server)
+- **Schauen wie der Schulserver aufgesetzt ist** (Admin Fragen)
 
 
 

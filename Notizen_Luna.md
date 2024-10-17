@@ -170,5 +170,13 @@ da die Swap feils zu klein sind und all meine CPU Kerne Ausgelastet waren und ge
 
 Eine Graphikkarte wäre Praktisch (am besten von NVIDA <- wird Suportet)
 
+# Fine tune a model 
+
+on fine-Tune-LLAMA ist eine anleitung
+
+es ist möglich die models von llama ganze einfach über hugging face-cli zu installieren bzw mit dem Token sich zu autorisieren 
+
+man muss einfach nur den Terms-of-contitions aktzeptieren und eingie dinge über sich an meta senden :D
+
 
 
