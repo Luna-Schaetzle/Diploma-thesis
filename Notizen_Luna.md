@@ -178,6 +178,27 @@ es ist möglich die models von llama ganze einfach über hugging face-cli zu ins
 
 man muss einfach nur den Terms-of-contitions aktzeptieren und eingie dinge über sich an meta senden :D
 
+## Datasets 
+
+Ein datenset für ai assistent interaktionen wäre sehr praktisch.
+
+https://huggingface.co/datasets/Isotonic/human_assistant_conversation 
+
+kann man so laden:
+
+```python
+from datasets import load_dataset
+
+# Laden des Datensatzes
+ds = load_dataset("Isotonic/human_assistant_conversation")
+
+# Zeige die Struktur des Datensatzes
+print(ds)
+```
+Training in eines models lokal ist auch möglich allerdings ist es sehr aufwendig und benötigt viel rechenleistung und dauert extrem lange (930 Stunden)
+
+![alt text](image-7.png)
+
 ## Lamma download 
 
 siehte fine-tune-llama.md and download-llama 
