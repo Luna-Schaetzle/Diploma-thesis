@@ -199,6 +199,15 @@ Training in eines models lokal ist auch möglich allerdings ist es sehr aufwendi
 
 ![alt text](image-7.png)
 
+Nach einernhalb Stunden Bugfixing funktioniert es entlich :D
+![alt text](image-8.png)
+
+### Pfad auf server zu trainingsdaten
+
+/home/laschaetzle@students.htlinn.local/.cache/huggingface/hub/datasets--Isotonic--human_assistant_conversation/snapshots/eefe292fe4eec3bcc82a59c662bb8380510356cf/data/validation-00000-of-00001-97966736f3498654.parquet
+
+Es dauert ca 1,5 Sekunden pro Datensatz auf meinem laptop
+
 ## Lamma download 
 
 siehte fine-tune-llama.md and download-llama 
