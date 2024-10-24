@@ -1,6 +1,6 @@
 <template>
   <div class="ollama-chat">
-    <h1>Ollama Chatbot</h1>
+    <h1>powered by Ollama</h1>
 
     <!-- Dropdown zur Auswahl des KI-Modells -->
     <div class="model-selection">

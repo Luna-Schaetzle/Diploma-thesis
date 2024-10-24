@@ -1,19 +1,43 @@
 <template>
   <div id="app">
-    <h1>Luminara Chatbot experimental v.0.1</h1>
-    <!-- Einbindung der OllamaChat-Komponente -->
-    <OllamaChat />
+    <h1>Luminara AI experimental v.0.3</h1>
+
+    <!-- Navigation zum Wechseln zwischen Chat, Bildgenerierung und Galerie -->
+    <nav>
+      <button @click="activeComponent = 'OllamaChat'" :class="{ active: activeComponent === 'OllamaChat' }">
+        Chat
+      </button>
+      <button @click="activeComponent = 'LuminaraImage'" :class="{ active: activeComponent === 'LuminaraImage' }">
+        Bildgenerierung
+      </button>
+      <button @click="activeComponent = 'LuminaraGallery'" :class="{ active: activeComponent === 'LuminaraGallery' }">
+        Galerie
+      </button>
+    </nav>
+
+    <!-- Anzeige der aktiven Komponente -->
+    <component :is="activeComponent"></component>
   </div>
 </template>
 
 <script>
-// Importiere die OllamaChat-Komponente
-import OllamaChat from './components/ollamaChat.vue';
+// Importiere die Komponenten
+import OllamaChat from './components/OllamaChat.vue';
+import LuminaraImage from './components/LuminaraImage.vue';
+import LuminaraGallery from './components/LuminaraGallery.vue';
 
-export default {  
+
+export default {
   name: 'App',
   components: {
-    OllamaChat, // Komponente registrieren
+    OllamaChat,
+    LuminaraImage,
+    LuminaraGallery,
+  },
+  data() {
+    return {
+      activeComponent: 'OllamaChat', // Standardmäßig Chat anzeigen
+    };
   },
 };
 </script>
@@ -26,5 +50,23 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+nav button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+nav button.active {
+  background-color: #45a049;
 }
 </style>
