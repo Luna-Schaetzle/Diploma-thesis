@@ -6,7 +6,7 @@
 
     <div v-if="images.length > 0" class="image-grid">
       <div v-for="(image, index) in images" :key="index" class="image-item" @click="showImage(image)">
-        <img :src="`http://10.10.11.11:5000/images/${image}`" :alt="image" />
+        <img :src="`http://localhost:5000/images/${image}`" :alt="image" />
       </div>
     </div>
 
@@ -18,7 +18,7 @@
     <div v-if="selectedImage" class="modal" @click="closeModal">
       <div class="modal-content">
         <span class="close" @click="closeModal">&times;</span>
-        <img :src="`http://10.10.11.115000/images/${selectedImage}`" alt="Selected Image" class="modal-image" />
+        <img :src="`http://localhost:5000/images/${selectedImage}`" alt="Selected Image" class="modal-image" />
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@ export default {
       this.error = null;
 
       try {
-        const response = await axios.get("http://10.10.11.11:5000/gallery");
+        const response = await axios.get("http://localhost: 5000/gallery");
         this.images = response.data;
       } catch (err) {
         this.error = `Fehler beim Abrufen der Bilder: ${err.message}`;

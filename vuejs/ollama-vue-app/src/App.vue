@@ -10,6 +10,9 @@
       <button @click="activeComponent = 'OllamaChat'" :class="{ active: activeComponent === 'OllamaChat' }">
         Chat
       </button>
+      <!--button @click="activeComponent = 'LuminaraImageWithPrompt'" :class="{ active: activeComponent === 'LuminaraImageWithPrompt' }">
+        Bild hochladen und an Ollama schicken
+      </button-->
       <button @click="activeComponent = 'LuminaraImage'" :class="{ active: activeComponent === 'LuminaraImage' }">
         Bildgenerierung
       </button>
@@ -30,6 +33,7 @@ import OllamaChat from './components/OllamaChat.vue';
 import LuminaraImage from './components/LuminaraImage.vue';
 import LuminaraGallery from './components/LuminaraGallery.vue';
 import LuminaraOllama from './components/LuminaraOllama.vue';
+import LuminaraImageWithPrompt from './components/LuminaraImageWithPrompt.vue';
 
 
 export default {
@@ -39,6 +43,7 @@ export default {
     LuminaraImage,
     LuminaraGallery,
     LuminaraOllama,
+    LuminaraImageWithPrompt,
   },
   data() {
     return {
