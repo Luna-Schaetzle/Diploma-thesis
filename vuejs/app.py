@@ -10,7 +10,7 @@ app = Flask(__name__)
 CORS(app)  # CORS für Cross-Origin-Anfragen aktivieren
 IMAGE_FOLDER = "static/images"  # Ordner, in dem die generierten Bilder gespeichert werden
 
-OLLAMA_API_URL = 'http://localhost:11434/v1/completions'  # Ollama API-URL
+OLLAMA_API_URL = 'http://10.10.11.11:11434/v1/completions'  # Ollama API-URL
 
 # Stelle sicher, dass der Bildordner existiert
 if not os.path.exists(IMAGE_FOLDER):
