@@ -4,13 +4,10 @@ from flask_cors import CORS
 from datetime import datetime
 import torch
 from diffusers import DiffusionPipeline
-import requests
 
 app = Flask(__name__)
-CORS(app)  # CORS für Cross-Origin-Anfragen aktivieren
+CORS(app)  # Erlaube CORS-Anfragen
 IMAGE_FOLDER = "static/images"  # Ordner, in dem die generierten Bilder gespeichert werden
-
-OLLAMA_API_URL = 'http://localhost:11434/v1/completions'  # Ollama API-URL
 
 # Stelle sicher, dass der Bildordner existiert
 if not os.path.exists(IMAGE_FOLDER):
@@ -34,34 +31,11 @@ def generate_image(prompt):
 
     return filename
 
-# Funktion zur Anfrage an die Ollama-API
-def ask_ollama(prompt, model):
-    try:
-        # Daten für die POST-Anfrage an Ollama vorbereiten
-        data = {
-            "model": model,  # Das Modell wird dynamisch festgelegt
-            "prompt": prompt
-        }
-        headers = {
-            "Content-Type": "application/json"
-        }
-        # Anfrage an die Ollama-API senden
-        response = requests.post(OLLAMA_API_URL, json=data, headers=headers)
-        
-        # Überprüfen, ob die Anfrage erfolgreich war
-        if response.status_code == 200:
-            return response.json()
-        else:
-            return {"error": "Fehler bei der Ollama-Anfrage"}
-    except Exception as e:
-        return {"error": str(e)}
-
 # Endpunkt zur Bildgenerierung
 @app.route('/generate', methods=['POST'])
 def generate():
     data = request.get_json()
     prompt = data.get('prompt')
-
     if not prompt:
         return jsonify({"error": "Kein Prompt angegeben!"}), 400
 
@@ -70,22 +44,6 @@ def generate():
         return jsonify({"filename": filename})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-# Endpunkt für die Ollama-Abfrage
-@app.route('/ask_ollama', methods=['POST'])
-def ask_ollama_endpoint():
-    data = request.get_json()
-    prompt = data.get('prompt')
-    model = data.get('model', 'llama3.2:1b')  # Standardmäßig das Modell "llama3.2:1b"
-
-    if not prompt:
-        return jsonify({"error": "Kein Prompt angegeben!"}), 400
-
-    # Anfrage an Ollama senden
-    response = ask_ollama(prompt, model)
-
-    # Antwort an den Client zurückgeben
-    return jsonify(response)
 
 # Endpunkt zur Bereitstellung aller Bilder in der Galerie (neueste zuerst)
 @app.route('/gallery', methods=['GET'])

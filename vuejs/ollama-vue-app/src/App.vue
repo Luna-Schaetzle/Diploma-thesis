@@ -4,6 +4,9 @@
 
     <!-- Navigation zum Wechseln zwischen Chat, Bildgenerierung und Galerie -->
     <nav>
+      <button @click="activeComponent = 'LuminaraOllama'" :class="{ active: activeComponent === 'LuminaraOllama' }">
+        Chat mit Ollama über Flask-API
+      </button>
       <button @click="activeComponent = 'OllamaChat'" :class="{ active: activeComponent === 'OllamaChat' }">
         Chat
       </button>
@@ -13,6 +16,7 @@
       <button @click="activeComponent = 'LuminaraGallery'" :class="{ active: activeComponent === 'LuminaraGallery' }">
         Galerie
       </button>
+
     </nav>
 
     <!-- Anzeige der aktiven Komponente -->
@@ -25,6 +29,7 @@
 import OllamaChat from './components/OllamaChat.vue';
 import LuminaraImage from './components/LuminaraImage.vue';
 import LuminaraGallery from './components/LuminaraGallery.vue';
+import LuminaraOllama from './components/LuminaraOllama.vue';
 
 
 export default {
@@ -33,10 +38,11 @@ export default {
     OllamaChat,
     LuminaraImage,
     LuminaraGallery,
+    LuminaraOllama,
   },
   data() {
     return {
-      activeComponent: 'OllamaChat', // Standardmäßig Chat anzeigen
+      activeComponent: 'LuminaraOllama', // Standardmäßig Chat anzeigen
     };
   },
 };
