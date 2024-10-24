@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generiertes Bild</title>
+    <title>Galerie der Bilder</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,14 +14,20 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            height: auto;
+            padding: 20px;
         }
         h1 {
             color: #333;
         }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         img {
-            max-width: 100%;
-            height: auto;
+            max-width: 300px;
+            margin: 10px;
             border: 2px solid #ccc;
             border-radius: 5px;
         }
@@ -36,12 +42,14 @@
     </style>
 </head>
 <body>
-    <h1>Generiertes Bild</h1>
-    <img src="{{ url_for('send_image', filename=filename) }}" alt="Generiertes Bild">
-    <br>
+    <h1>Galerie der Bilder</h1>
+    <div class="gallery">
+        {% for image in images %}
+            <img src="{{ url_for('send_image', filename=image) }}" alt="Generiertes Bild">
+        {% endfor %}
+    </div>
     <nav>
         <a href="/">Ein weiteres Bild generieren</a>
-        <a href="/gallery">Zur Galerie</a>
     </nav>
 </body>
 </html>

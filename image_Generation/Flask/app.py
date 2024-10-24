@@ -50,6 +50,13 @@ def generate():
     else:
         return "Fehler: Der Prompt darf nicht leer sein!"
 
+@app.route('/gallery')
+def gallery():
+    # Liste der generierten Bilder abrufen
+    images = os.listdir(output_folder)
+    images = [img for img in images if img.endswith('.png')]
+    return render_template('gallery.html', images=images)
+
 @app.route('/generated_images/<path:filename>')
 def send_image(filename):
     return send_from_directory(output_folder, filename)
