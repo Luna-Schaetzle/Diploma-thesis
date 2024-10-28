@@ -42,7 +42,7 @@ export default {
       this.error = null;
 
       try {
-        const response = await axios.get("http://localhost: 5000/gallery");
+        const response = await axios.get("http://localhost:5000/gallery");
         this.images = response.data;
       } catch (err) {
         this.error = `Fehler beim Abrufen der Bilder: ${err.message}`;
