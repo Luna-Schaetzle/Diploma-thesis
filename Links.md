@@ -26,3 +26,8 @@ https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct
 # llama local with ai app doxc im als quelle verwenden
 https://www.datacamp.com/tutorial/run-llama-3-locally
 
+
+# Benchmarks with ollama 
+
+https://kofler.info/ollama-speed-benchmark/
+
