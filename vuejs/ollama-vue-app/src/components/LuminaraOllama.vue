@@ -11,6 +11,8 @@
           <option value="gemma2">Gemma2 von Google (langsamer)</option>
           <option value="llama3.1">LLaMA 3.1 von Meta (älter und langsamer)</option>
           <option value="llava:13b">LLaVA 13B (am langsamsten, aber mit Vision [Vision wird noch implementiert])</option>
+          <option value="mario">Per System Promt soll die AI wie Mario reden</option>
+          <option value="htlstudent">Ist eine Virtuelle Person die wie ein HTL Schülerin oder Schüler redet</option>
         </select>
       </div>
   
