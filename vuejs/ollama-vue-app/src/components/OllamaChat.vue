@@ -103,7 +103,7 @@ export default {
         console.log("Sende Payload an Backend:", payload); // Logging
 
         // Anfrage an Flask senden
-        const response = await axios.post("http://localhost:5000/ask_ollama", payload, {
+        const response = await axios.post("http://10.10.11.11:5000/ask_ollama", payload, {
           headers: {
             "Content-Type": "application/json",
           },

@@ -78,7 +78,7 @@
   
         try {
           // Anfrage an die Flask-Anwendung senden
-          const response = await axios.post("http://localhost:5000/send_image_prompt", {
+          const response = await axios.post("http://10.10.11.11:5000/send_image_prompt", {
             prompt: this.userInput,
             image: this.imageBase64, // Base64-kodiertes Bild wird an Flask gesendet
           });

@@ -56,7 +56,7 @@ export default {
       try {
         // Anfrage an die Flask-API zur Bildgenerierung
         const response = await axios.post(
-          "http://localhost:5000/generate",
+          "http://10.10.11.11:5000/generate",
           {
             prompt: this.userInput,
           }
