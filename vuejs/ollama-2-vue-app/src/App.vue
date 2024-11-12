@@ -1,7 +1,7 @@
 <template>
   <div id="app" :class="{ 'dark-mode': isDarkMode }">
     <header>
-      <h1>Luminara AI experimental v.0.3</h1>
+      <h1>Luminara AI v.0.4 (experimental)</h1>
       <!-- Dark Mode Toggle Button -->
       <button @click="toggleDarkMode" class="dark-mode-toggle">
         {{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}

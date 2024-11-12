@@ -14,7 +14,11 @@
 
     <!-- Anzeige der Nachrichten im Chat-Format -->
     <div class="chat-box">
-      <div v-for="(message, index) in messages" :key="index" :class="['message', message.type]">
+      <div
+        v-for="(message, index) in messages"
+        :key="index"
+        :class="['message', message.type]"
+      >
         <p>{{ message.text }}</p>
       </div>
     </div>
@@ -78,17 +82,24 @@ export default {
           {
             headers: {
               "Content-Type": "application/json", // Header für JSON
-            }
+            },
           }
         );
 
         // Überprüfen der Antwort
-        if (response.data && response.data.choices && response.data.choices.length > 0) {
+        if (
+          response.data &&
+          response.data.choices &&
+          response.data.choices.length > 0
+        ) {
           const botResponse = response.data.choices[0].text;
           // Füge die Antwort von Ollama zur Nachrichtenliste hinzu
           this.messages.push({ type: "ollama", text: botResponse });
         } else {
-          this.messages.push({ type: "ollama", text: "Fehler: Keine Antwort von Ollama erhalten." });
+          this.messages.push({
+            type: "ollama",
+            text: "Fehler: Keine Antwort von Ollama erhalten.",
+          });
         }
       } catch (err) {
         console.error("Fehler:", err);
@@ -111,7 +122,7 @@ export default {
 }
 
 .ollama-chat {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ddd;
