@@ -6,8 +6,20 @@ What is and isn't Open Source?
 Importency of Open Source in Economics.
 advantages and disadvantages of Open Source
 chalanges when using or creating Open Source.
-
+how to make Revenue with Open Source.
+Open Source in Economics.
 Used open source by me and my Experiences with it.
+
+
+
+
+
+
+
+
+
+
+
 
 # 2. Ai and thier impect on Econmoics 
 ## 2.1 which AIs are getting used
