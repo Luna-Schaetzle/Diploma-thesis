@@ -22,7 +22,8 @@ def is_time_query(user_prompt: str):
         "do you have the time",
         "tell me what time it is",
         "what is the current time",
-        "can you give me the time"
+        "can you give me the time",
+        "time"
     ]
     for keyword in time_keywords:
         if keyword in user_prompt.lower():
