@@ -1,51 +1,59 @@
 \babel@toc {american}{}\relax 
 \babel@toc {ngerman}{}\relax 
-\contentsline {chapter}{Abstract}{iii}{section*.1}%
-\contentsline {subparagraph}{\nonumberline Projektergebnis}{vi}{subparagraph*.4}%
-\contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Vertiefende Aufgabenstellung}{1}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Schüler*innen Name 1}{1}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Schüler*innen Name 2}{1}{subsection.1.1.2}%
-\contentsline {section}{\numberline {1.2}Dokumentation der Arbeit}{1}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Open source evaluation on Economics}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Research Question}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Introduction}{3}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}What is Open Source?}{3}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Advantages of Open Source}{4}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Why Do People Use Open Source?}{4}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Chapter Overview}{5}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}What is and isn’t Open Source?}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Definition and Guiding Principles}{5}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Misconceptions About Open Source}{6}{subsection.2.3.2}%
-\contentsline {section}{\numberline {2.4}The Role of Open Source in Economics}{7}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Driving Innovation and Shaping Market Dynamics}{7}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Supporting Startups and small Enterprises}{8}{subsection.2.4.2}%
-\contentsline {section}{\numberline {2.5}Advantages and Disadvantages of Open Source}{9}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Advantages}{9}{subsection.2.5.1}%
-\contentsline {subsection}{\numberline {2.5.2}Disadvantages}{9}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Challenges of Using or Creating Open Source}{9}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Technical Challenges}{9}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Economic Challenges}{9}{subsection.2.6.2}%
-\contentsline {subsection}{\numberline {2.6.3}Social Challenges}{10}{subsection.2.6.3}%
-\contentsline {subsection}{\numberline {2.6.4}Legal Issues}{10}{subsection.2.6.4}%
-\contentsline {section}{\numberline {2.7}Revenue Models in Open Source}{10}{section.2.7}%
-\contentsline {section}{\numberline {2.8}Open Source in Key Industries}{10}{section.2.8}%
-\contentsline {section}{\numberline {2.9}Reflexion}{10}{section.2.9}%
-\contentsline {section}{\numberline {2.10}Open Source in Practice: A Personal Experience}{11}{section.2.10}%
-\contentsline {section}{\numberline {2.11}Open Source in Our Project \& Licensing}{11}{section.2.11}%
-\contentsline {subsection}{\numberline {2.11.1}Project}{11}{subsection.2.11.1}%
-\contentsline {subsection}{\numberline {2.11.2}License}{11}{subsection.2.11.2}%
-\contentsline {section}{\numberline {2.12}Conclusion}{12}{section.2.12}%
-\contentsline {chapter}{\numberline {3}Test}{13}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Latex-Beispiele}{15}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Aulistungen}{15}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Tabellen}{15}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Abbildungen}{17}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Quellcode}{17}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Java-Code}{17}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Python-Code}{18}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Lesen von Dateien}{18}{subsection.4.4.3}%
-\contentsline {section}{\numberline {4.5}Referenzen}{18}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Zitate}{19}{section.4.6}%
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{29}{chapter*.12}%
+\contentsline {chapter}{Abstract}{ii}{section*.1}%
+\contentsline {subparagraph}{\nonumberline Projektergebnis}{iv}{subparagraph*.4}%
+\contentsline {part}{\numberline {I}Introduction}{1}{part.1}%
+\contentsline {chapter}{\numberline {1}Einleitung}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Vertiefende Aufgabenstellung}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Schüler*innen Name 1}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Schüler*innen Name 2}{3}{subsection.1.1.2}%
+\contentsline {section}{\numberline {1.2}Dokumentation der Arbeit}{3}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Introduction: AI in the Industry and Education Environment}{5}{chapter.2}%
+\contentsline {part}{\numberline {II}Hardware}{7}{part.2}%
+\contentsline {chapter}{\numberline {3}Raspberry PI}{9}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Server}{11}{chapter.4}%
+\contentsline {part}{\numberline {III}Implementation}{13}{part.3}%
+\contentsline {chapter}{\numberline {5}Used Technologies}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Visual Studio Code}{15}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Ollama}{15}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Vue.js}{15}{section.5.4}%
+\contentsline {section}{\numberline {5.5}firebase}{15}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Github}{15}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Operating Systems used}{17}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Used Programming Languages}{19}{chapter.7}%
+\contentsline {chapter}{\numberline {8}API and Libraries}{21}{chapter.8}%
+\contentsline {part}{\numberline {IV}Evaluations}{23}{part.4}%
+\contentsline {chapter}{\numberline {9}Open source evaluation on Economics}{25}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introduction}{25}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}What is Open Source?}{25}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Advantages of Open Source}{26}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Why Do People Use Open Source?}{26}{subsection.9.1.3}%
+\contentsline {subsection}{\numberline {9.1.4}Chapter Overview}{27}{subsection.9.1.4}%
+\contentsline {section}{\numberline {9.2}What is and isn’t Open Source?}{27}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Definition and Guiding Principles}{27}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Misconceptions About Open Source}{28}{subsection.9.2.2}%
+\contentsline {section}{\numberline {9.3}The Role of Open Source in Economics}{29}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Driving Innovation and Shaping Market Dynamics}{29}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Supporting Startups and small Enterprises}{30}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Enabling Cross-Industry Collaboration and Open Innovation}{31}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.4}Advantages and Disadvantages of Open Source}{31}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Advantages}{31}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Disadvantages}{31}{subsection.9.4.2}%
+\contentsline {section}{\numberline {9.5}Challenges of Using or Creating Open Source}{31}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Technical Challenges}{32}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Economic Challenges}{32}{subsection.9.5.2}%
+\contentsline {subsection}{\numberline {9.5.3}Social Challenges}{32}{subsection.9.5.3}%
+\contentsline {subsection}{\numberline {9.5.4}Legal Issues}{32}{subsection.9.5.4}%
+\contentsline {section}{\numberline {9.6}Revenue Models in Open Source}{32}{section.9.6}%
+\contentsline {section}{\numberline {9.7}Open Source in Key Industries}{33}{section.9.7}%
+\contentsline {section}{\numberline {9.8}Reflexion}{33}{section.9.8}%
+\contentsline {section}{\numberline {9.9}Open Source in Practice: A Personal Experience}{33}{section.9.9}%
+\contentsline {section}{\numberline {9.10}Open Source in Our Project \& Licensing}{34}{section.9.10}%
+\contentsline {subsection}{\numberline {9.10.1}Project}{34}{subsection.9.10.1}%
+\contentsline {subsection}{\numberline {9.10.2}License}{34}{subsection.9.10.2}%
+\contentsline {section}{\numberline {9.11}Conclusion}{34}{section.9.11}%
+\contentsline {part}{\numberline {V}Conclusion}{35}{part.5}%
+\contentsline {chapter}{\numberline {10}Proplemes that occured}{37}{chapter.10}%
+\contentsline {chapter}{\nonumberline Literaturverzeichnis}{47}{chapter*.12}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

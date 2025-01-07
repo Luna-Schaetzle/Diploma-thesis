@@ -11,8 +11,8 @@
 %% Titelseite angezeigt
 %% ========================================================================
 
-\newcommand{\myprojectpartner}{XXX} 
-\newcommand{\mytitle}{SAIPIA} 
+%\newcommand{\myprojectpartner}{XXX} 
+\newcommand{\mytitle}{AI in the Industry and Education Environment} %% Titel der Arbeit
 \newcommand{\mysubtitle}{SUBTITITLE}
 \newcommand{\myinstitute}{Abteilung für Wirtschaftsingenieure/Betriebsinformatik} 
 \newcommand{\mysubmissionyear}{2025} %% Einreich - Jahr
@@ -126,8 +126,32 @@
 
 
 %% HIER DIE EIGENEN KAPITEL EINFÜGEN
-\input{content/einleitung} 
+\part{Introduction}
+\input{content/einleitung} %Delet this later/ its just a Reminder
+\input{content/Introduction}  
+
+\part{Hardware}
+%Hardware
+\input{content/Rassberry_PI}
+\input{content/Server}
+
+
+\part{Implementation} %search for a better name Maby: Software or Theoretical Part or Software background
+%Software
+\input{content/used_technologies}
+\input{content/Operating_Systems_used}
+\input{content/used_Programming_Languages}
+\input{content/API_Libaryies}
+
+\part{Evaluations} %search for a better name
+%Economics
 \input{content/Open_source_evaluation_Economics} 
+
+\part{Conclusion}
+\input{content/Conclusion}
+\input{content/Problems_that_occured}
+\input{content/Outlook}
+
 %\input{content/test} % Einfach auskommentieren für die tatsächliche Arbeit
 %\input{content/latex_beispiele} % Einfach auskommentieren für die tatsächliche Arbeit
 

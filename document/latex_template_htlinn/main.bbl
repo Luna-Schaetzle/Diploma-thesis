@@ -1,22 +1,29 @@
 \begin{thebibliography}{xx}
 
-\harvarditem{}{n.d.}{reips2002}
-  \harvardyearleft n.d.\harvardyearright .
+\harvarditem{{Forbes Technology Council}}{2024}{forbes_misconceptions_open_source_2024}
+{Forbes Technology Council}  \harvardyearleft 2024\harvardyearright , `Misconceptions about open source solutions clarified by tech experts'.
+\newblock Accessed: 2024-12-04.
+\newline\harvardurl{https://www.forbes.com/councils/forbestechcouncil/2024/10/09/misconceptions-about-open-source-solutions-clarified-by-tech-experts/}
 
-\harvarditem{Couper}{2001}{couper2001}
-Couper, M.~P.  \harvardyearleft 2001\harvardyearright , `{Web Survey Research:
-  Challenges and Opportunities}', Proceedings of the Annual Meeting of the
-  American Statistical Association.
+\harvarditem[Hendrickson et~al.]{Hendrickson, Magoulas \harvardand\ O'Reilly}{2012}{opensource_hendrickson2012economic}
+Hendrickson, M., Magoulas, R. \harvardand\ O'Reilly, T.  \harvardyearleft 2012\harvardyearright , {\em Economic Impact of Open Source on Small Business: A Case Study}, O'Reilly Media.
+\newline\harvardurl{https://www.oreilly.com/library/view/economic-impact-of/9781449343408/}
 
-\harvarditem{Diekmann}{1999}{diekma2000}
-Diekmann, A.  \harvardyearleft 1999\harvardyearright , {\em {Empirische
-  Sozialforschung. Grundlagen, Methoden, Anwendungen}}, {fifth} edn, Rowohlts
-  Enzyklopaedie, Reinbeck bei Hamburg.
+\harvarditem{Initiative}{2007}{Open_Source_Initiative_OS_definition}
+Initiative, O.~S.  \harvardyearleft 2007\harvardyearright , `The open source definition', \url{https://opensource.org/osd}.
+\newblock Accessed: 2024-12-02.
 
-\harvarditem[Dillman et~al.]{Dillman, Tortora \harvardand\
-  Bowker}{1998}{dillma1998}
-Dillman, D.~A., Tortora, R. \harvardand\ Bowker, D.  \harvardyearleft
-  1998\harvardyearright , {Principles for Constructing Web Surveys}, Technical
-  report, SESRC.
+\harvarditem{OpenSource.com}{2024}{opensource_what_is}
+OpenSource.com  \harvardyearleft 2024\harvardyearright , `What is open source?', \url{https://opensource.com/resources/what-open-source}.
+\newblock Accessed: 2024-12-02.
+
+\harvarditem{StudioLabs}{2024}{studiolabs_open_source_startups_2024}
+StudioLabs  \harvardyearleft 2024\harvardyearright , `Open source for startups: Lower costs, higher growth'.
+\newblock Accessed: 2024-12-04.
+\newline\harvardurl{https://www.studiolabs.com/open-source-for-startups-lower-costs-higher-growth/}
+
+\harvarditem{Torvalds}{2024}{Linus_Torvalds_quote_open_source}
+Torvalds, L.  \harvardyearleft 2024\harvardyearright , `Linus torvalds quotes', \url{https://www.brainyquote.com/quotes/linus_torvalds_135583}.
+\newblock Accessed: 2024-12-02.
 
 \end{thebibliography}
