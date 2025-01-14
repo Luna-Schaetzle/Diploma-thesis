@@ -1,5 +1,3 @@
-# von KI erstellt
-
 import time
 import json
 from ollama import chat
@@ -95,9 +93,9 @@ for prompt in prompts:
 
         latency = end_time - start_time
 
-        # Handle response as a dictionary
-        if isinstance(response, dict) and 'message' in response and 'content' in response['message']:
-            response_text = response['message']['content']
+        # Extract content from the Message object
+        if response and hasattr(response["message"], "content"):
+            response_text = response["message"].content  # Accessing the attribute of the Message object
         else:
             response_text = "No content returned or unexpected format"
 
@@ -110,8 +108,10 @@ for prompt in prompts:
         results.append({"Prompt": prompt, "Response Time (seconds)": "Error", "Response": f"Error: {str(e)}"})
 
 # Save to JSON file
-json_file_name = "ollama_response_time_results.json"
-with open(json_file_name, "w") as file:
+json_file_name = model_name + "_response_time_results.json"
+
+
+with open(json_file_name, "w") as file: # If the file does not exist, it will be created
     json.dump(results, file, indent=4)
 
 print(f"The results have been saved in {json_file_name}.")
