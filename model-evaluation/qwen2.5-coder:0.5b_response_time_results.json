@@ -1,0 +1,101 @@
+[
+    {
+        "Prompt": "Explain the theory of relativity in simple terms.",
+        "Response Time (seconds)": 5.200789213180542,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": 44.0,
+        "Memory Usage (MB)": 11.47265625,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    },
+    {
+        "Prompt": "Create a short story about a knight.",
+        "Response Time (seconds)": 4.553739786148071,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": 35.5,
+        "Memory Usage (MB)": 119.08984375,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    },
+    {
+        "Prompt": "What are the advantages of open-source projects?",
+        "Response Time (seconds)": 6.391874313354492,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": -47.0,
+        "Memory Usage (MB)": -33.63671875,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    },
+    {
+        "Prompt": "Write a Python function that outputs prime numbers up to 100.",
+        "Response Time (seconds)": 8.072815656661987,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": 52.2,
+        "Memory Usage (MB)": -344.35546875,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    },
+    {
+        "Prompt": "What is the difference between machine learning and deep learning?",
+        "Response Time (seconds)": 7.527048826217651,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": 54.1,
+        "Memory Usage (MB)": 2.2109375,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    },
+    {
+        "Prompt": "What are the basic principles of quantum entanglement?",
+        "Response Time (seconds)": 7.039253234863281,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": 53.2,
+        "Memory Usage (MB)": 8.35546875,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    },
+    {
+        "Prompt": "Write a Python function to generate Fibonacci numbers.",
+        "Response Time (seconds)": 5.9666359424591064,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": 49.3,
+        "Memory Usage (MB)": 20.2734375,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    },
+    {
+        "Prompt": "Explain the process of human memory formation.",
+        "Response Time (seconds)": 7.275947093963623,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": 54.1,
+        "Memory Usage (MB)": 16.4296875,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    },
+    {
+        "Prompt": "What is the impact of social media on mental health?",
+        "Response Time (seconds)": 5.968698263168335,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": 59.7,
+        "Memory Usage (MB)": 259.1171875,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    },
+    {
+        "Prompt": "Describe the history and cultural significance of the Olympic Games.",
+        "Response Time (seconds)": 0.3321714401245117,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": 52.5,
+        "Memory Usage (MB)": 29.99609375,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    },
+    {
+        "Prompt": "Generate a D&D character with a backstory and traits.",
+        "Response Time (seconds)": 13.953620195388794,
+        "Response": "No content returned or unexpected format",
+        "CPU Usage (%)": 49.1,
+        "Memory Usage (MB)": -14.88671875,
+        "GPU Memory Usage (MB)": 0,
+        "GPU Utilization (%)": "No GPU detected"
+    }
+]
