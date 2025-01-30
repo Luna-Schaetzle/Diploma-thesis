@@ -1,0 +1,1 @@
+scp laschaetzle@students.htlinn.local@10.10.11.11:~/model-Testing/resourse/deepseek-r1:14b_response_time_results_ressours_usage.json ~/Downloads/server
