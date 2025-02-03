@@ -19,7 +19,12 @@ def calculate_metrics(data):
     results = []
     rouge = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeL'], use_stemmer=True)
     grammar_tool = language_tool_python.LanguageTool('en-US')
-    sentiment_analyzer = pipeline('sentiment-analysis', model="distilbert-base-uncased-finetuned-sst-2-english")
+    sentiment_analyzer = pipeline(
+        'sentiment-analysis', 
+        model="distilbert-base-uncased-finetuned-sst-2-english",
+        truncation=True,
+        max_length=512
+    )
 
     for item in data:
         prompt = item['Prompt']
@@ -43,7 +48,13 @@ def calculate_metrics(data):
             readability_score = textstat.flesch_reading_ease(response)
 
             # Sentiment Analysis
-            sentiment = sentiment_analyzer(response)[0]['label']
+            # Sentiment Analysis mit Fehlerbehandlung
+            try:
+                sentiment_result = sentiment_analyzer(response)[0]
+                sentiment = sentiment_result['label']
+            except Exception as e:
+                print(f"Sentiment error for prompt '{prompt}': {e}")
+                sentiment = "Error"
 
             results.append({
                 "Prompt": prompt,
