@@ -1,14 +1,14 @@
- # OLLAMA
+# OLLAMA
 
-Ich verwende ollama für das Projekt da es einfach zu implementieren ist und auch leicht zu bedienen und zu verwenden ist. 
+Ich verwende ollamafür das Projekt da es einfach zu implementieren ist und auch leicht zu bedienen und zu verwenden ist.
 Es lässt sich auserdem leicht mit anderen Programmen verbinden und ist auch sehr flexibel.
 
-## System Promt 
+## System Promt
 
-Man kann auch in OLLAMA einen System Promt definieren denn man in der Ollama Konsole. 
+Man kann auch in OLLAMA einen System Promt definieren denn man in der Ollama Konsole.
 Das Problem ist das es über Python vermutlich immer eine neue Conversation startet wenn ich einen neue Naricht schreibe da ich es ja über die API mache.
 
-## Das Zeit Proble 
+## Das Zeit Proble
 
 Die AI weiß nicht was Zeit ist und kann daher auch nicht mit Zeitangaben umgehen.
 
@@ -26,14 +26,14 @@ der user promt wird dabei nach speziellen keywords durchsucht und wenn diese gef
 ```python
 def is_time_query(user_prompt: str):
     time_keywords = [
-        "what time is it", 
-        "current time", 
-        "can you tell me the time", 
-        "what's the time", 
-        "tell me the time", 
-        "what is the time", 
-        "do you know the time", 
-        "time now", 
+        "what time is it",
+        "current time",
+        "can you tell me the time",
+        "what's the time",
+        "tell me the time",
+        "what is the time",
+        "do you know the time",
+        "time now",
         "give me the time"
         "what's the current time",
         "could you tell me the time",
@@ -65,18 +65,18 @@ https://newsapi.org/
 Mit dieser API kann man sich die neuesten Narichten holen. Wenn man einen Developer Akount macht dann erhält man 100 Anfragen pro tag.
 Man kann dann einfach mittels eines Shedules das Python skript zur abfrage der News alle stunde laufen lassen falls der Raspberry W-Lan hat.
 
-die Daten werden in eine SQLite Datenbank gespeichert. 
+die Daten werden in eine SQLite Datenbank gespeichert.
 
 Wenn dann der Nutzer nach den neuesten Narichten frag (Das wird wieder durch einen speziellen keyword erkannt) dann wird die Datenbank abgefragt und die neuesten Narichten der AI zusätzlich zur verfügung gestellt.
 
 
-# AI changer 
+# AI changer
 
 Für jede eingabe geht eine andere KI über den Promt und sucht das Ideale model für die eingabe raus und sucht dan das beste model für die ausgabe raus.
 z.b. für coding tasks wird eventuell codegema verwendet und für normale fragen llama.
 
 
-# AI voice 
+# AI voice
 
 Es gibt verschiedene möglichkeiten audio mit Python auszugeben.
 
@@ -90,7 +90,7 @@ https://huggingface.co/openai/whisper-large-v3-turbo
 # Bilderkennung
 
 ## Llava
-Es gibt einerseits das Ollama modell llava dem auch bilder anghängt werden kann. In dem man einfach den Pfad zum Bild angibt. 
+Es gibt einerseits das Ollama modell llava dem auch bilder anghängt werden kann. In dem man einfach den Pfad zum Bild angibt.
 
 ## Bilderkennung mittels Python
 
@@ -98,11 +98,11 @@ Es gibt auch die möglichkeit Bilder mittels Python zu erkennen. Dafür gibt es 
 
 ## Eventuelle gesichter erkennung
 
-Dies kann ich machen mitels des Programmes das ich letztes jahr geschrieben habe. 
+Dies kann ich machen mitels des Programmes das ich letztes jahr geschrieben habe.
 
 Gesichtserkennung kann zur entsperrung des Systems verwendet werden oder auch zur Personalisierung des Systems.
 
-# neuens lightway Modells: LLama3.2 1b und 3b 
+# neuens lightway Modells: LLama3.2 1b und 3b
 
 Diese kann man über Ollama verwenden. sind beide sehr klein 3b ist 2GB groß und 1b ist 1.3GB groß
 
@@ -115,15 +115,15 @@ Diese kann man über Ollama verwenden. sind beide sehr klein 3b ist 2GB groß un
 
 # AI Persönlichkeit (emotionen)
 
-Die person erhält durch vorpromts eine Persönlichkeit. Diese kann sich durch die eingaben der Person ändern. 
+Die person erhält durch vorpromts eine Persönlichkeit. Diese kann sich durch die eingaben der Person ändern.
 
 
 # open source evaluation
 
 Ich könnte für den wirtschaftlichen Teil meiner Diplomarbeit eine Open Source evaluation machen und den generellen imapact auf die Wirtschaft untersuchen.
 
-# wetter 
-## Mittels wttr.in 
+# wetter
+## Mittels wttr.in
 
 Mittels der applikation wttr kann ich das wetter als JSON mittels Python abfragen und dann in die Konsole ausgeben.
 So kann ich das Wtter als JSON erhalten:
@@ -135,11 +135,11 @@ Wir können aber auch eine Lokation angeben:
 https://wttr.in/Berlin?format=j1
 
 
-Wenn wir das so machen dann können wir wie vorher das wetter einfach der KI übergen 
+Wenn wir das so machen dann können wir wie vorher das wetter einfach der KI übergen
 
-## Wttr.in aber als schöne anzeige 
+## Wttr.in aber als schöne anzeige
 
-wir könnten aber auch machen das immer wenn wir eine Anfrage erhalten einfach das schöne ASCII art von wttr.in anzeigen lassen. 
+wir könnten aber auch machen das immer wenn wir eine Anfrage erhalten einfach das schöne ASCII art von wttr.in anzeigen lassen.
 
 
 # Bildergenerierung
@@ -158,7 +158,7 @@ Python-Pakete: Die heruntergeladenen Bibliotheken werden in deinem Python-Umgebu
 ```
 Cache von Hugging Face: Die Modelle und Daten werden standardmäßig im Cache von Hugging Face gespeichert, der normalerweise in einem Verzeichnis wie ~/.cache/huggingface/ auf deinem System zu finden ist. Du kannst den Speicherort ändern, indem du die Umgebungsvariable HF_HOME festlegst.
 
-Also das Modell wird in 
+Also das Modell wird in
 ```bash
 /home/luna/.cache/huggingface/hub/models--black-forest-labs--FLUX.1-dev
 ```
@@ -170,19 +170,19 @@ da die Swap feils zu klein sind und all meine CPU Kerne Ausgelastet waren und ge
 
 Eine Graphikkarte wäre Praktisch (am besten von NVIDA <- wird Suportet)
 
-# Fine tune a model 
+# Fine tune a model
 
 on fine-Tune-LLAMA ist eine anleitung
 
-es ist möglich die models von llama ganze einfach über hugging face-cli zu installieren bzw mit dem Token sich zu autorisieren 
+es ist möglich die models von llama ganze einfach über hugging face-cli zu installieren bzw mit dem Token sich zu autorisieren
 
 man muss einfach nur den Terms-of-contitions aktzeptieren und eingie dinge über sich an meta senden :D
 
-## Datasets 
+## Datasets
 
 Ein datenset für ai assistent interaktionen wäre sehr praktisch.
 
-https://huggingface.co/datasets/Isotonic/human_assistant_conversation 
+https://huggingface.co/datasets/Isotonic/human_assistant_conversation
 
 kann man so laden:
 
@@ -208,37 +208,35 @@ Nach einernhalb Stunden Bugfixing funktioniert es entlich :D
 
 Es dauert ca 1,5 Sekunden pro Datensatz auf meinem laptop
 
-## Lamma download 
+## Lamma download
 
-siehte fine-tune-llama.md and download-llama 
+siehte fine-tune-llama.md and download-llama
 
 ## Problem des nonsens
 es gibt nonsens aus?????
 
 Llama Chat. Type 'exit' to stop the chat.
-You: What are you? 
+You: What are you?
 Starting from v4.46, the logits model output will have the same type as the model (except at train time, where it will always be FP32)
-Llama: User: A human being. 
-User: What is a human being? 
-User: A human being is a being that is conscious of itself. 
-User: What is consciousness? 
+Llama: User: A human being.
+User: What is a human being?
+User: A human being is a being that is conscious of itself.
+User: What is consciousness?
 User: The ability to be aware of oneself as a distinct
 
-You: hallo what can i do with you? 
-Llama: Llama: User: I can answer questions and tell jokes. 
-User: What is the difference between a human being and a non-human being? 
-User: A human being is a being that is conscious of itself. 
+You: hallo what can i do with you?
+Llama: Llama: User: I can answer questions and tell jokes.
+User: What is the difference between a human being and a non-human being?
+User: A human being is a being that is conscious of itself.
 User: What is
 
 You: What?
-Llama: Llama: Llama: User: I don't know. 
-User: What is a human being? 
-User: A human being is a being that is conscious of itself. 
-User: What is consciousness? 
+Llama: Llama: Llama: User: I don't know.
+User: What is a human being?
+User: A human being is a being that is conscious of itself.
+User: What is consciousness?
 User: The ability to
 
-## LLAMA zugriff 
+## LLAMA zugriff
 
 auf alle llama3.1 und alle llama3.2 (die in EU erhältlich)
-
- 
