@@ -8,84 +8,40 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/Luna-Schaetzle/Diploma-thesis "GitHub top language")
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Luna-Schaetzle/Diploma-thesis "GitHub commit activity")
 
-# SAIPiA - Self-sufficient Artificial Intelligent Raspberry Pi Assistant
+# AI Integration in Education and Software Development
 
-**SAIPiA** (Self-sufficient Artificial Intelligent Raspberry Pi Assistant) is an autonomous intelligent system based on a Raspberry Pi 5. It combines AI-powered functionalities like voice control, image processing, database access, and machine learning to efficiently handle versatile tasks. With a modular design and flexible expandability, the project focuses heavily on leveraging open-source technologies.
+This repository contains the source code and documentation for my diploma thesis, which explores the integration of Artificial Intelligence (AI) in educational and software development environments.
 
-## Project Overview
+## Abstract
 
-SAIPiA is a diploma thesis project that covers the following key areas:
-- Voice and image processing
-- Integration of AI models for task completion
-- Optimization of hardware and software components
-- Utilization of open-source solutions
-- Raspberry Pi as the core system with server support for heavier computational loads
-- Setup of a dedicated AI server for resource-intensive models
-- Integration of external services like weather data
+This diploma thesis examines the integration of Artificial Intelligence (AI) in educational and software development environments. Recognizing the increasing role of AI in automating processes, optimizing operations, and enhancing quality, as well as supporting personalized learning, the thesis addresses challenges such as complexity, limited expertise, and high development costs.
 
-## Key Features
+The primary goal was to develop AI-driven solutions for both fields. This involved setting up a server (API) to host AI models, developing a backend for an AI Hub and a Visual Studio Code Extension, and integrating suitable AI models. The work documents a shift from a broad evaluation of AI models to practical, focused applications.
 
-- **Voice Control and Output**: Using OpenAI Whisper for precise speech recognition and researching an optimized text-to-speech library for natural speech output.
-- **Image Generation and Object Recognition**: Implementing AI models for edge technology to enable local image processing.
-- **AI Model Integration**: Utilizing and benchmarking LLAMA3.2, along with server-based models running on a dedicated AI server.
-- **Weather Data Integration**: Retrieving and displaying current weather data through the wttr.in API.
+A key aspect of the thesis is the implementation of Large Language Models (LLMs). Various free and commercial LLMs were evaluated using the Ollama application for local deployment and the OpenAI API, with quantitative and qualitative methods assessing response time, resource utilization, and text quality. This led to the selection and integration of specific models.
 
-## Technologies Used
+Additionally, a self-hosted Flask service was developed to link the frontend and backend components for both the Intelligent Student AI Hub and the Visual Studio Code Extension. The thesis also outlines the architecture of a web platform featuring an interactive chatbot, image-to-text tool, programming bot, and user account management, and includes economic evaluations of AI and open-source technologies.
 
-- **Raspberry Pi 5**
-- **Ubuntu-based AI server** (optional for complex computations)
-- **Python 3.x** for development and module integration
-- **wttr.in API** for weather data integration
-- (More technologies will be added as the project progresses)
+## Key Findings
 
-## Detailed Features
+The key findings highlight the transformative potential of AI in education and industry. Although some planned features were omitted due to time constraints, the modular architecture supports future enhancements.
 
-### LLAMA3.2 Integration
-LLAMA3.2 is used for text processing and other AI-related tasks. Future enhancements include deploying more powerful models (such as LLAMA3.2:1b) on the server side to offload computation from the Raspberry Pi.
+## Project Structure
 
-### Voice Control
-- **Input**: OpenAI Whisper for accurate speech recognition.
-- **Output**: Research is underway to find an advanced text-to-speech library for natural voice output.
+- `api/`: Contains the code for the server (API) to host AI models.
+- `ai-hub/`: Contains the backend code for the AI Hub.
+- `vscode-extension/`: Contains the code for the Visual Studio Code Extension.
+- `flask-service/`: Contains the code for the self-hosted Flask service.
+- `web-platform/`: Contains the code for the web platform with an interactive chatbot, image-to-text tool, programming bot, and user account management.
 
-### Weather Integration
-- The **wttr.in API** is used to fetch weather information, which is displayed by SAIPiA. Further optimizations are planned for better data presentation.
+## Contact
 
-### News Integration
-- **NEWS API** will be used to retrieve and display current news updates. Implementation details are forthcoming.
+For any questions or further information, please feel free to reach out:
 
-### Image Processing and Recognition
-- Local image processing with AI models through edge computing for real-time results on the Raspberry Pi.
-- More complex image generation will be handled by the AI server.
+**Name:** Luna Schätzle
+**Email:** [luna.schaetzle@gmail.com](mailto:luna.schaetzle@gmail.com)
 
-## Hardware
 
-The SAIPiA hardware configuration includes:
-- **Raspberry Pi 5** as the core system
-- **Camera** for object and environment recognition
-- **AI Accelerator** to boost image and object recognition processing
-- **AI Server** for intensive AI model computation
-- **Additional components** in collaboration with Gabriel
+## License
 
-## Screenshots & Demos
-
-[*To be added*]
-
-## Roadmap
-
-- **AI Model Expansion**: Integration and optimization of advanced AI models (e.g., LLAMA3.2:1b).
-- **Voice Control Optimization**: Improving speech output and researching optimized libraries.
-- **Weather Data Integration**: Enhancing the display and usage of weather information from wttr.in.
-- **Hardware Testing**: Ongoing tests of the Raspberry Pi in combination with the camera and AI accelerator.
-- **Legal and Open-Source Research**: Investigating legal frameworks and open-source licenses as part of the diploma thesis.
-
-## Future Plans
-
-In the coming months, we plan to:
-- Integrate more external APIs (e.g., for traffic data).
-- Explore object recognition extensions for specific use cases like smart home applications (potentially).
-- Optimize voice control with multilingual support.
-
-## Licensing
-
-The project is licensed under the GNU General Public License v3.0 (GPL-3.0) for the software and the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0) for the documentation.
-
+This project is licensed under the GPL-3.0 License - see the [LICENSE](LICENSE) file for details.
